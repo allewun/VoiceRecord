@@ -263,7 +263,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+			shellScript = "if [ -z \"${WANT_IOS_SIM}\" ]\n\nthen\n\n#   Running under xcodebuild, so use ios-sim installed from Homebrew into /usr/local/bin/ios-sim\n\nkillall -m -KILL \"iPhone Simulator\" || true\n\nour_test_bundle_path=$BUILT_PRODUCTS_DIR/$PRODUCT_NAME.$WRAPPER_EXTENSION\n\nour_env=(\"--setenv\" \"DYLD_INSERT_LIBRARIES=/../../Library/PrivateFrameworks/IDEBundleInjection.framework/IDEBundleInjection\")\n\nour_env=(\"${our_env[@]}\" \"--setenv\" \"XCInjectBundle=${our_test_bundle_path}\")\n\nour_env=(\"${our_env[@]}\" \"--setenv\" \"XCInjectBundleInto=${TEST_HOST}\")\n\nour_app_location=\"$(dirname \"${TEST_HOST}\")\"\n\n\"/usr/loca/bin/ios-sim\" launch \"${our_app_location}\" \"${our_env[@]}\" --args -SenTest All \"${our_test_bundle_path}\" --exit\n\nkillall -m -KILL \"iPhone Simulator\" || true\n\nexit 0\n\nelse\n\n#   Running under Xcode\n\n\"${DEVELOPER_TOOLS_DIR}/RunUnitTests\"\nfi";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -304,6 +304,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Allen Wu (8WUC7WYK9J)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -312,6 +313,7 @@
 				GCC_PREFIX_HEADER = VoiceRecord_Prefix.pch;
 				INFOPLIST_FILE = "VoiceRecord-Info.plist";
 				PRODUCT_NAME = VoiceRecord;
+				PROVISIONING_PROFILE = "5142EACA-F1D8-4685-9A8D-00A85738B192";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 			};
 			name = Debug;
@@ -345,6 +347,7 @@
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_GENERATE_TEST_COVERAGE_FILES = YES;
+				GCC_INSTRUMENT_PROGRAM_FLOW_ARCS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "VoiceRecordTests/VoiceRecordTests-Prefix.pch";
@@ -377,6 +380,7 @@
 				);
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_GENERATE_TEST_COVERAGE_FILES = YES;
+				GCC_INSTRUMENT_PROGRAM_FLOW_ARCS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "VoiceRecordTests/VoiceRecordTests-Prefix.pch";
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
@@ -436,6 +440,7 @@
 				9FF6060217751734008ED381 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "VoiceRecord" */ = {
 			isa = XCConfigurationList;
