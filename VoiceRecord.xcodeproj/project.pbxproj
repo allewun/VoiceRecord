@@ -15,6 +15,7 @@
 		2899E5220DE3E06400AC0155 /* VoiceRecordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2899E5210DE3E06400AC0155 /* VoiceRecordViewController.xib */; };
 		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
 		28D7ACF80DDB3853001CB0EB /* VoiceRecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D7ACF70DDB3853001CB0EB /* VoiceRecordViewController.m */; };
+		9F8C3EA9177A5C0800677579 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F8C3EA8177A5C0800677579 /* Default-568h@2x.png */; };
 		9FE041D21771545600034C64 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FE041D11771545600034C64 /* CoreMotion.framework */; };
 		9FF605F317751734008ED381 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FF605F217751734008ED381 /* SenTestingKit.framework */; };
 		9FF605F417751734008ED381 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
@@ -39,6 +40,7 @@
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* VoiceRecord_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VoiceRecord_Prefix.pch; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* VoiceRecord-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "VoiceRecord-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
+		9F8C3EA8177A5C0800677579 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		9FE041D11771545600034C64 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 		9FF605F117751734008ED381 /* VoiceRecordTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VoiceRecordTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FF605F217751734008ED381 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
@@ -101,6 +103,7 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				9F8C3EA8177A5C0800677579 /* Default-568h@2x.png */,
 				9FE041D11771545600034C64 /* CoreMotion.framework */,
 				080E96DDFE201D6D7F000001 /* Classes */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
@@ -238,6 +241,7 @@
 			files = (
 				28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */,
 				2899E5220DE3E06400AC0155 /* VoiceRecordViewController.xib in Resources */,
+				9F8C3EA9177A5C0800677579 /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -313,7 +317,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = VoiceRecord_Prefix.pch;
 				INFOPLIST_FILE = "VoiceRecord-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = VoiceRecord;
 				PROVISIONING_PROFILE = "";
@@ -334,7 +338,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = VoiceRecord_Prefix.pch;
 				INFOPLIST_FILE = "VoiceRecord-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = VoiceRecord;
 				PROVISIONING_PROFILE = "2C4F337B-74F0-439A-AE1E-5DBFB07445AA";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "2C4F337B-74F0-439A-AE1E-5DBFB07445AA";
@@ -348,7 +352,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				BUNDLE_LOADER = "build/Debug-iphoneos/VoiceRecord.app/VoiceRecord";
+				BUNDLE_LOADER = "";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -373,7 +377,7 @@
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				INFOPLIST_FILE = "VoiceRecordTests/VoiceRecordTests-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
@@ -387,7 +391,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				BUNDLE_LOADER = "build/Release-iphoneos/VoiceRecord.app/VoiceRecord";
+				BUNDLE_LOADER = "";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -404,7 +408,7 @@
 				GCC_PREFIX_HEADER = "VoiceRecordTests/VoiceRecordTests-Prefix.pch";
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				INFOPLIST_FILE = "VoiceRecordTests/VoiceRecordTests-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_AFTER_BUILD = YES;
 				TEST_HOST = "build/Release-iphoneos/VoiceRecord.app/VoiceRecord";
