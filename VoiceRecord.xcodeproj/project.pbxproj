@@ -365,6 +365,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_AFTER_BUILD = YES;
+				TEST_HOST = "build/Debug-iphoneos/VoiceRecord.app/VoiceRecord";
 				WRAPPER_EXTENSION = octest;
 			};
 			name = Debug;
@@ -392,6 +393,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_AFTER_BUILD = YES;
+				TEST_HOST = "build/Debug-iphoneos/VoiceRecord.app/VoiceRecord";
 				VALIDATE_PRODUCT = YES;
 				WRAPPER_EXTENSION = octest;
 			};
@@ -401,12 +403,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Roby John (RR64W4SH29)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Originate Labs";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "72F6CEC9-4A72-4926-ABF8-FF182C29556C";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "2C4F337B-74F0-439A-AE1E-5DBFB07445AA";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
