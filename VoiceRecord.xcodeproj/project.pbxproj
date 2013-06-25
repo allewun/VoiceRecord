@@ -346,6 +346,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "build/Debug-iphoneos/VoiceRecord.app/VoiceRecord";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -400,7 +401,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_AFTER_BUILD = YES;
-				TEST_HOST = "build/Debug-iphoneos/VoiceRecord.app/VoiceRecord";
+				TEST_HOST = "";
 				VALIDATE_PRODUCT = YES;
 				WRAPPER_EXTENSION = octest;
 			};
