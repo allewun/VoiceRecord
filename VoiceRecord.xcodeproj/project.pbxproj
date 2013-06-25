@@ -326,6 +326,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Originate Labs";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Originate Labs";
 				COPY_PHASE_STRIP = YES;
 				GCC_GENERATE_TEST_COVERAGE_FILES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -333,6 +335,8 @@
 				INFOPLIST_FILE = "VoiceRecord-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = VoiceRecord;
+				PROVISIONING_PROFILE = "2C4F337B-74F0-439A-AE1E-5DBFB07445AA";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "2C4F337B-74F0-439A-AE1E-5DBFB07445AA";
 				TEST_AFTER_BUILD = YES;
 				VALIDATE_PRODUCT = YES;
 			};
