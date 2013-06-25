@@ -314,6 +314,7 @@
 				GCC_PREFIX_HEADER = VoiceRecord_Prefix.pch;
 				INFOPLIST_FILE = "VoiceRecord-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = VoiceRecord;
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
