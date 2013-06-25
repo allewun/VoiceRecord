@@ -304,8 +304,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Allen Wu (8WUC7WYK9J)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Originate Labs";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Originate Labs";
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -313,7 +313,7 @@
 				GCC_PREFIX_HEADER = VoiceRecord_Prefix.pch;
 				INFOPLIST_FILE = "VoiceRecord-Info.plist";
 				PRODUCT_NAME = VoiceRecord;
-				PROVISIONING_PROFILE = "5142EACA-F1D8-4685-9A8D-00A85738B192";
+				PROVISIONING_PROFILE = "2C4F337B-74F0-439A-AE1E-5DBFB07445AA";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 			};
 			name = Debug;
