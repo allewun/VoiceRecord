@@ -316,6 +316,7 @@
 				PRODUCT_NAME = VoiceRecord;
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				TEST_AFTER_BUILD = YES;
 			};
 			name = Debug;
 		};
@@ -329,6 +330,7 @@
 				GCC_PREFIX_HEADER = VoiceRecord_Prefix.pch;
 				INFOPLIST_FILE = "VoiceRecord-Info.plist";
 				PRODUCT_NAME = VoiceRecord;
+				TEST_AFTER_BUILD = YES;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
